@@ -9,9 +9,7 @@ export default function SwitchButton({ isTheme }: { isTheme: boolean }) {
   return (
     <label
       htmlFor={isTheme ? 'check/theme' : 'check/language'}
-      className="relative flex h-2  w-12
-      cursor-pointer items-center transition-all duration-500 lg:h-12
-      lg:w-12"
+      className="relative h-full w-full cursor-pointer transition-all duration-500"
     >
       {isTheme ? (
         <>

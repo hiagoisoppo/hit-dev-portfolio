@@ -3,7 +3,7 @@ import { GlobeAmericasIcon } from '@heroicons/react/24/solid'
 export default function GlitchedGlobeAmericasIcon() {
   return (
     <div
-      className="group/globeglitch1 absolute right-2 h-8 w-8
+      className="group/globeglitch1 h-full w-full
       peer-checked/language:hidden peer-checked/language:text-transparent"
     >
       {/* BASE GLITCH */}
