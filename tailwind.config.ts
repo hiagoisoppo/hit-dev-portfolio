@@ -44,12 +44,32 @@ const config: Config = {
           500: '#4A0307',
         },
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      animation: {
+        runningglow: 'runningglow 10s linear infinite',
       },
       keyframes: {
+        runningglow: {
+          '0%': {
+            backgroundImage:
+              'linear-gradient(to bottom left, var(--tw-gradient-stops))',
+          },
+          '25%': {
+            backgroundImage:
+              'linear-gradient(to bottom right, var(--tw-gradient-stops))',
+          },
+          '50%': {
+            backgroundImage:
+              'linear-gradient(to top right, var(--tw-gradient-stops))',
+          },
+          '75%': {
+            backgroundImage:
+              'linear-gradient(to top left, var(--tw-gradient-stops))',
+          },
+          '100%': {
+            backgroundImage:
+              'linear-gradient(to bottom left, var(--tw-gradient-stops))',
+          },
+        },
         glitch0: {
           '0%': {
             transform: 'translateX(0.25rem) translateY(-0.25rem)',

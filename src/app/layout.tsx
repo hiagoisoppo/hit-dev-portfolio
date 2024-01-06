@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import type { Metadata } from 'next'
 import { Rubik } from 'next/font/google'
@@ -20,11 +21,14 @@ export default function RootLayout({
       <body
         className={
           rubik.className +
-          'bg-secondary-100 dark:bg-primary-700 text-primary-700 dark:text-secondary-100'
+          'flex h-svh w-svw items-center justify-center bg-secondary-100 p-4 text-primary-700 dark:bg-primary-700 dark:text-secondary-100'
         }
       >
         <Header />
-        <main>{children}</main>
+        <main className="h-full w-full bg-primary-700 opacity-85 [clip-path:_polygon(0%_5%,_20%_5%,_25%_0%,_95%_0%,_95%_10%,_100%_15%,_100%_95%,_95%_100%,_50%_100%,_45%_95%,_0%_95%,_0%_5%,_0.25%_5%,_0.25%_94.5%,_47.5%_94.5%,_52.5%_99.5%,_92.5%_99.5%,_99.75%_91.5%,_99.75%_18%,_94.75%_13%,_94.75%_0.5%,_27%_0.5%,_22%_5.5%,_0%_5.5%)] dark:bg-secondary-100">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   )
