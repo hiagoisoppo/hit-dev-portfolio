@@ -11,7 +11,7 @@ export default function Header() {
         md:h-[35%] md:w-[27%] md:text-4xl
         lg:h-[41%] lg:w-[13%] lg:text-4xl"
       >
-        L O G O
+        H I A G O
       </h1>
       <div
         className="absolute right-[3.75%] top-0 flex h-full w-[10%] flex-col items-center justify-center p-[1.5%]
