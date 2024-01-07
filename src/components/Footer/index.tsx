@@ -1,20 +1,22 @@
-import ResumeDownloadButton from '../ResumeDownloadButton'
+import DownloadIcon from '../Icons/Download'
+import GithubIcon from '../Icons/Github'
+import LinkedinIcon from '../Icons/Linkedin'
 
 export default function Footer() {
   return (
     <footer
-      className="absolute bottom-[2.25%] left-0 h-[5.25%] w-full
-      px-4 md:h-[15%] lg:h-[12%]"
+      className="absolute bottom-0 left-0 h-[9%] w-full
+      p-2 md:h-[15%] lg:h-[12%]"
     >
-      <div className="flex h-full w-[38%] items-center justify-evenly py-[1.5%]">
-        <div className="relative h-full w-[25%] cursor-pointer">
-          <ResumeDownloadButton />
+      <div className="flex h-full w-[40%] items-center justify-evenly bg-opacity-50">
+        <div className="relative flex h-full w-full cursor-pointer items-center justify-center p-1">
+          <DownloadIcon />
         </div>
-        <div className="relative h-full w-[25%] cursor-pointer">
-          <ResumeDownloadButton />
+        <div className="relative flex h-full w-full cursor-pointer items-center justify-center p-1">
+          <GithubIcon />
         </div>
-        <div className="relative h-full w-[25%] cursor-pointer">
-          <ResumeDownloadButton />
+        <div className="relative flex h-full w-full cursor-pointer items-center justify-center p-1">
+          <LinkedinIcon />%
         </div>
       </div>
     </footer>

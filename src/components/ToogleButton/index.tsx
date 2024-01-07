@@ -1,15 +1,15 @@
 'use client'
 
-import GlitchedGlobeAmericasIcon from './GlitchedGlobeAmericasIcon'
-import GlitchedGlobeAsiaAustraliaIcon from './GlitchedGlobeAsiaAustraliaIcon'
-import GlitchedMoonIcon from './GlitchedMoonIcon'
-import GlitchedSuncon from './GlitchedSunIcon'
+import GlitchedMoonIcon from '../Icons/Moon'
+import GlitchedSunIcon from '../Icons/Sun'
+import GlitchedTextBrIcon from '../Icons/TextFill'
+import GlitchedTextEuaIcon from '../Icons/TextLineIcon'
 
 export default function SwitchButton({ isTheme }: { isTheme: boolean }) {
   return (
     <label
       htmlFor={isTheme ? 'check/theme' : 'check/language'}
-      className="relative h-full w-full cursor-pointer transition-all duration-500"
+      className="relative h-full w-full cursor-pointer bg-green-400 transition-all duration-500"
     >
       {isTheme ? (
         <>
@@ -24,7 +24,7 @@ export default function SwitchButton({ isTheme }: { isTheme: boolean }) {
             }}
           />
           <GlitchedMoonIcon />
-          <GlitchedSuncon />
+          <GlitchedSunIcon />
         </>
       ) : (
         <>
@@ -38,8 +38,8 @@ export default function SwitchButton({ isTheme }: { isTheme: boolean }) {
             //     : document.documentElement.classList.remove('dark')
             // }}
           />
-          <GlitchedGlobeAmericasIcon />
-          <GlitchedGlobeAsiaAustraliaIcon />
+          <GlitchedTextEuaIcon />
+          <GlitchedTextBrIcon />
         </>
       )}
     </label>

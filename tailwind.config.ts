@@ -9,9 +9,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        rubik: ['Rubik', 'sans-serif'],
-      },
       colors: {
         primary: {
           100: '#2251BE',
@@ -30,11 +27,11 @@ const config: Config = {
           500: '#545454',
         },
         tertiary: {
-          100: '#DB0E4D',
-          200: '#B80B3F',
-          300: '#8F0931',
-          400: '#660623',
-          500: '#3D0415',
+          100: '#00FA43',
+          200: '#00DD3B',
+          300: '#00AD2E',
+          400: '#008523',
+          500: '#005C18',
         },
         quaternary: {
           100: '#E80914',
