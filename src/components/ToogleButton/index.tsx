@@ -2,14 +2,14 @@
 
 import GlitchedMoonIcon from '../Icons/Moon'
 import GlitchedSunIcon from '../Icons/Sun'
-import GlitchedTextBrIcon from '../Icons/TextFill'
-import GlitchedTextEuaIcon from '../Icons/TextLineIcon'
+import GlitchedTextBrIcon from '../Icons/FlagBr'
+import GlitchedTextEuaIcon from '../Icons/FlagUsa'
 
 export default function SwitchButton({ isTheme }: { isTheme: boolean }) {
   return (
     <label
       htmlFor={isTheme ? 'check/theme' : 'check/language'}
-      className="relative h-full w-full cursor-pointer bg-green-400 transition-all duration-500"
+      className="relative h-full w-full cursor-pointer transition-all duration-500"
     >
       {isTheme ? (
         <>
