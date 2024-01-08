@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        pattern1: 'url(/src/assets/pattern 1.svg)',
+      },
       colors: {
         primary: {
           100: '#2251BE',
