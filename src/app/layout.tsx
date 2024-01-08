@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 import LayoutBox from '@/components/LayoutBox'
+import Main from '@/components/Main'
 import { Genos } from 'next/font/google'
 
 export const metadata: Metadata = {
@@ -25,10 +26,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={genos.className}>
-      <body className="flex h-svh w-svw items-center justify-center bg-quaternary-100 p-2 text-primary-700 dark:bg-primary-700 dark:text-secondary-100">
+      <body className="flex h-svh w-svw items-center justify-center bg-quaternary-100 text-primary-700 dark:bg-primary-700 dark:text-secondary-100">
         <LayoutBox />
         <Header />
-        <main>{children}</main>
+        <Main>{children}</Main>
         <Footer />
       </body>
     </html>
