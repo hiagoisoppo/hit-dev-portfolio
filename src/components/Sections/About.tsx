@@ -1,10 +1,13 @@
 'use client'
 import { motion } from 'framer-motion'
 
-export default function About() {
+export default function About({ id }: { id: string }) {
   return (
-    <motion.section className="flex h-screen w-screen justify-center bg-green-200">
-      <h1 className="text-6xl">ABOUT</h1>
+    <motion.section
+      id={id}
+      className="relative flex h-screen w-screen snap-center items-center justify-center"
+    >
+      <h1>ABOUT</h1>
     </motion.section>
   )
 }

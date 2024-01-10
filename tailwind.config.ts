@@ -41,32 +41,7 @@ const config: Config = {
           500: '#4A0307',
         },
       },
-      animation: {
-        runningglow: 'runningglow 10s linear infinite',
-      },
       keyframes: {
-        runningglow: {
-          '0%': {
-            backgroundImage:
-              'linear-gradient(to bottom left, var(--tw-gradient-stops))',
-          },
-          '25%': {
-            backgroundImage:
-              'linear-gradient(to bottom right, var(--tw-gradient-stops))',
-          },
-          '50%': {
-            backgroundImage:
-              'linear-gradient(to top right, var(--tw-gradient-stops))',
-          },
-          '75%': {
-            backgroundImage:
-              'linear-gradient(to top left, var(--tw-gradient-stops))',
-          },
-          '100%': {
-            backgroundImage:
-              'linear-gradient(to bottom left, var(--tw-gradient-stops))',
-          },
-        },
         glitch0: {
           '0%': {
             transform: 'translateX(0.25rem) translateY(-0.25rem)',
@@ -155,6 +130,414 @@ const config: Config = {
           '100%': {
             transform: 'translateX(-0.1rem) translateY(0.4rem)',
             opacity: '90%',
+          },
+        },
+        glitch3: {
+          '0%': {
+            transform: 'translateX(0.25rem)translateY(-0.25rem)',
+            opacity: '90%',
+          },
+          '1.719%': {
+            transform: 'translateX(0.5rem)translateY(0.1rem)',
+            opacity: '90%',
+          },
+          '1.842%': {
+            transform: 'translateX(-0.1rem)translateY(0.7rem)',
+            opacity: '90%',
+          },
+          '6.018%': {
+            transform: 'translateX(0.2rem)translateY(-0.2rem)',
+            opacity: '90%',
+          },
+          '6.14%': {
+            transform: 'translateX(-0.1rem)translateY(-0.3rem)',
+            opacity: '90%',
+          },
+          '12.158%': {
+            transform: 'translateX(-0.2rem)translateY(0.4rem)',
+            opacity: '90%',
+          },
+          '12.281%': {
+            transform: 'translateX(-0.5rem)translateY(0.3rem)',
+            opacity: '100%',
+          },
+          '100%': {
+            transform: 'translateX(-0.5rem)translateY(0.3rem)',
+            opacity: '100%',
+          },
+        },
+        glitch3a: {
+          '0%': {
+            transform: 'translateX(0.25rem)translateY(-0.25rem)',
+            opacity: '90%',
+          },
+          '1.273%': {
+            transform: 'translateX(0.5rem)translateY(0.1rem)',
+            opacity: '90%',
+          },
+          '1.364%': {
+            transform: 'translateX(-0.1rem)translateY(0.7rem)',
+            opacity: '90%',
+          },
+          '4.455%': {
+            transform: 'translateX(0.2rem)translateY(-0.2rem)',
+            opacity: '90%',
+          },
+          '4.545%': {
+            transform: 'translateX(-0.1rem)translateY(-0.3rem)',
+            opacity: '90%',
+          },
+          '9%': {
+            transform: 'translateX(-0.2rem)translateY(0.4rem)',
+            opacity: '90%',
+          },
+          '9.091%': {
+            transform: 'translateX(-0.5rem)translateY(0.3rem)',
+            opacity: '0%',
+          },
+          '100%': {
+            transform: 'translateX(-0.5rem)translateY(0.3rem)',
+            opacity: '0%',
+          },
+        },
+        glitch3b: {
+          '0%': {
+            transform: 'translateX(0.25rem)translateY(-0.25rem)',
+            opacity: '90%',
+          },
+          '0.83%': {
+            transform: 'translateX(0.5rem)translateY(0.1rem)',
+            opacity: '90%',
+          },
+          '0.889%': {
+            transform: 'translateX(-0.1rem)translateY(0.7rem)',
+            opacity: '90%',
+          },
+          '2.904%': {
+            transform: 'translateX(0.2rem)translateY(-0.2rem)',
+            opacity: '90%',
+          },
+          '2.963%': {
+            transform: 'translateX(-0.1rem)translateY(-0.3rem)',
+            opacity: '90%',
+          },
+          '5.867%': {
+            transform: 'translateX(-0.2rem)translateY(0.4rem)',
+            opacity: '90%',
+          },
+          '5.927%': {
+            transform: 'translateX(-0.5rem)translateY(0.3rem)',
+            opacity: '0%',
+          },
+          '100%': {
+            transform: 'translateX(-0.5rem)translateY(0.3rem)',
+            opacity: '0%',
+          },
+        },
+        glitch3c: {
+          '0%': {
+            transform: 'translateX(0.25rem)translateY(-0.25rem)',
+            opacity: '90%',
+          },
+          '1.6%': {
+            transform: 'translateX(0.5rem)translateY(0.1rem)',
+            opacity: '90%',
+          },
+          '1.714%': {
+            transform: 'translateX(-0.1rem)translateY(0.7rem)',
+            opacity: '90%',
+          },
+          '5.599%': {
+            transform: 'translateX(0.2rem)translateY(-0.2rem)',
+            opacity: '90%',
+          },
+          '5.713%': {
+            transform: 'translateX(-0.1rem)translateY(-0.3rem)',
+            opacity: '90%',
+          },
+          '11.312%': {
+            transform: 'translateX(-0.2rem)translateY(0.4rem)',
+            opacity: '90%',
+          },
+          '11.426%': {
+            transform: 'translateX(-0.5rem)translateY(0.3rem)',
+            opacity: '0%',
+          },
+          '100%': {
+            transform: 'translateX(-0.5rem)translateY(0.3rem)',
+            opacity: '0%',
+          },
+        },
+        glitch4: {
+          '0%': {
+            transform: 'translateX(0.25rem) translateY(-0.25rem)',
+            opacity: '90%',
+          },
+          '1.719%': {
+            transform: 'translateX(0.2rem) translateY(-0.1rem)',
+            opacity: '90%',
+          },
+          '1.842%': {
+            transform: 'translateX(0.1rem) translateY(-0.2rem)',
+            opacity: '90%',
+          },
+          '6.018%': {
+            transform: 'translateX(0.3rem) translateY(-0.3rem)',
+            opacity: '90%',
+          },
+          '6.14%': {
+            transform: 'translateX(0.1rem) translateY(-0.4rem)',
+            opacity: '90%',
+          },
+          '12.158%': {
+            transform: 'translateX(0.3rem) translateY(-0.5rem)',
+            opacity: '90%',
+          },
+          '12.281%': {
+            transform: 'translateX(0.1rem) translateY(-0.4rem)',
+            opacity: '0%',
+          },
+          '100%': {
+            transform: 'translateX(0.1rem) translateY(-0.4rem)',
+            opacity: '0%',
+          },
+        },
+        glitch4a: {
+          '0%': {
+            transform: 'translateX(0.25rem) translateY(-0.25rem)',
+            opacity: '90%',
+          },
+          '1.273%': {
+            transform: 'translateX(0.2rem) translateY(-0.1rem)',
+            opacity: '90%',
+          },
+          '1.364%': {
+            transform: 'translateX(0.1rem) translateY(-0.2rem)',
+            opacity: '90%',
+          },
+          '4.455%': {
+            transform: 'translateX(0.3rem) translateY(-0.3rem)',
+            opacity: '90%',
+          },
+          '4.545%': {
+            transform: 'translateX(0.1rem) translateY(-0.4rem)',
+            opacity: '90%',
+          },
+          '9%': {
+            transform: 'translateX(0.3rem) translateY(-0.5rem)',
+            opacity: '90%',
+          },
+          '9.091%': {
+            transform: 'translateX(0.1rem) translateY(-0.4rem)',
+            opacity: '0%',
+          },
+          '100%': {
+            transform: 'translateX(0.1rem) translateY(-0.4rem)',
+            opacity: '0%',
+          },
+        },
+        glitch4b: {
+          '0%': {
+            transform: 'translateX(0.25rem) translateY(-0.25rem)',
+            opacity: '90%',
+          },
+          '0.83%': {
+            transform: 'translateX(0.2rem) translateY(-0.1rem)',
+            opacity: '90%',
+          },
+          '0.889%': {
+            transform: 'translateX(0.1rem) translateY(-0.2rem)',
+            opacity: '90%',
+          },
+          '2.904%': {
+            transform: 'translateX(0.3rem) translateY(-0.3rem)',
+            opacity: '90%',
+          },
+          '2.963%': {
+            transform: 'translateX(0.1rem) translateY(-0.4rem)',
+            opacity: '90%',
+          },
+          '5.867%': {
+            transform: 'translateX(0.3rem) translateY(-0.5rem)',
+            opacity: '90%',
+          },
+          '5.927%': {
+            transform: 'translateX(0.1rem) translateY(-0.4rem)',
+            opacity: '0%',
+          },
+          '100%': {
+            transform: 'translateX(0.1rem) translateY(-0.4rem)',
+            opacity: '0%',
+          },
+        },
+        glitch4c: {
+          '0%': {
+            transform: 'translateX(0.25rem) translateY(-0.25rem)',
+            opacity: '90%',
+          },
+          '1.6%': {
+            transform: 'translateX(0.2rem) translateY(-0.1rem)',
+            opacity: '90%',
+          },
+          '1.714%': {
+            transform: 'translateX(0.1rem) translateY(-0.2rem)',
+            opacity: '90%',
+          },
+          '5.599%': {
+            transform: 'translateX(0.3rem) translateY(-0.3rem)',
+            opacity: '90%',
+          },
+          '5.713%': {
+            transform: 'translateX(0.1rem) translateY(-0.4rem)',
+            opacity: '90%',
+          },
+          '11.312%': {
+            transform: 'translateX(0.3rem) translateY(-0.5rem)',
+            opacity: '90%',
+          },
+          '11.426%': {
+            transform: 'translateX(0.1rem) translateY(-0.4rem)',
+            opacity: '0%',
+          },
+          '100%': {
+            transform: 'translateX(0.1rem) translateY(-0.4rem)',
+            opacity: '0%',
+          },
+        },
+        glitch5: {
+          '0%': {
+            transform: 'translateX(-0.25rem) translateY(0.25rem)',
+            opacity: '90%',
+          },
+          '1.719%': {
+            transform: 'translateX(-0.3rem) translateY(0.1rem)',
+            opacity: '90%',
+          },
+          '1.842%': {
+            transform: 'translateX(-0.1rem) translateY(0.2rem)',
+            opacity: '90%',
+          },
+          '6.018%': {
+            transform: 'translateX(-0.4rem) translateY(0.3rem)',
+            opacity: '90%',
+          },
+          '6.14%': {
+            transform: 'translateX(-0.1rem) translateY(0.4rem)',
+            opacity: '90%',
+          },
+          '12.158%': {
+            transform: 'translateX(-0.4rem) translateY(0.5rem)',
+            opacity: '90%',
+          },
+          '12.281%': {
+            transform: 'translateX(-0.1rem) translateY(0.4rem)',
+            opacity: '0%',
+          },
+          '100%': {
+            transform: 'translateX(-0.1rem) translateY(0.4rem)',
+            opacity: '0%',
+          },
+        },
+        glitch5a: {
+          '0%': {
+            transform: 'translateX(-0.25rem) translateY(0.25rem)',
+            opacity: '90%',
+          },
+          '1.273%': {
+            transform: 'translateX(-0.3rem) translateY(0.1rem)',
+            opacity: '90%',
+          },
+          '1.364%': {
+            transform: 'translateX(-0.1rem) translateY(0.2rem)',
+            opacity: '90%',
+          },
+          '4.455%': {
+            transform: 'translateX(-0.4rem) translateY(0.3rem)',
+            opacity: '90%',
+          },
+          '4.545%': {
+            transform: 'translateX(-0.1rem) translateY(0.4rem)',
+            opacity: '90%',
+          },
+          '9%': {
+            transform: 'translateX(-0.4rem) translateY(0.5rem)',
+            opacity: '90%',
+          },
+          '9.091%': {
+            transform: 'translateX(-0.1rem) translateY(0.4rem)',
+            opacity: '0%',
+          },
+          '100%': {
+            transform: 'translateX(-0.1rem) translateY(0.4rem)',
+            opacity: '0%',
+          },
+        },
+        glitch5b: {
+          '0%': {
+            transform: 'translateX(-0.25rem) translateY(0.25rem)',
+            opacity: '90%',
+          },
+          '0.83%': {
+            transform: 'translateX(-0.3rem) translateY(0.1rem)',
+            opacity: '90%',
+          },
+          '0.889%': {
+            transform: 'translateX(-0.1rem) translateY(0.2rem)',
+            opacity: '90%',
+          },
+          '2.904%': {
+            transform: 'translateX(-0.4rem) translateY(0.3rem)',
+            opacity: '90%',
+          },
+          '2.963%': {
+            transform: 'translateX(-0.1rem) translateY(0.4rem)',
+            opacity: '90%',
+          },
+          '5.867%': {
+            transform: 'translateX(-0.4rem) translateY(0.5rem)',
+            opacity: '90%',
+          },
+          '5.927%': {
+            transform: 'translateX(-0.1rem) translateY(0.4rem)',
+            opacity: '0%',
+          },
+          '100%': {
+            transform: 'translateX(-0.1rem) translateY(0.4rem)',
+            opacity: '0%',
+          },
+        },
+        glitch5c: {
+          '0%': {
+            transform: 'translateX(-0.25rem) translateY(0.25rem)',
+            opacity: '90%',
+          },
+          '1.6%': {
+            transform: 'translateX(-0.3rem) translateY(0.1rem)',
+            opacity: '90%',
+          },
+          '1.714%': {
+            transform: 'translateX(-0.1rem) translateY(0.2rem)',
+            opacity: '90%',
+          },
+          '5.599%': {
+            transform: 'translateX(-0.4rem) translateY(0.3rem)',
+            opacity: '90%',
+          },
+          '5.713%': {
+            transform: 'translateX(-0.1rem) translateY(0.4rem)',
+            opacity: '90%',
+          },
+          '11.312%': {
+            transform: 'translateX(-0.4rem) translateY(0.5rem)',
+            opacity: '90%',
+          },
+          '11.426%': {
+            transform: 'translateX(-0.1rem) translateY(0.4rem)',
+            opacity: '0%',
+          },
+          '100%': {
+            transform: 'translateX(-0.1rem) translateY(0.4rem)',
+            opacity: '0%',
           },
         },
       },

@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={genos.className}>
-      <body className="flex h-svh w-svw items-center justify-center bg-quaternary-100 text-primary-700 dark:bg-primary-700 dark:text-secondary-100">
+      <body className="no-scrollbar flex h-svh w-svw items-center justify-center bg-secondary-100 text-primary-700 dark:bg-primary-700 dark:text-secondary-100">
         <LayoutBox />
         <Header />
         <Main>{children}</Main>

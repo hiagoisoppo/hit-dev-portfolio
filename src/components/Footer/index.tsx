@@ -6,7 +6,7 @@ import LinkedinIcon from '../Icons/Linkedin'
 
 export default function Footer() {
   return (
-    <footer className="absolute bottom-0 left-0 h-[7%] w-full p-[2%] md:h-[6%] md:p-[1.5%] lg:h-[6%] lg:p-[0.75%]">
+    <footer className="fixed bottom-0 left-0 z-50 h-[7%] w-full p-[2%] md:h-[6%] md:p-[1.5%] lg:h-[6%] lg:p-[0.75%]">
       <div className="flex h-full w-[38%] items-center justify-center md:w-[26%] lg:w-[13%]">
         <motion.div
           initial={{ opacity: 0, x: -100 }}

@@ -4,8 +4,8 @@ import Logo from '../Icons/Logo'
 export default function Header() {
   return (
     <header
-      className="absolute left-0 top-0 flex h-[15%] w-full
-      justify-between p-2 md:h-[15%] lg:h-[12%]"
+      className="fixed left-0 top-0 z-50 flex h-[15%]
+      w-full justify-between p-2 md:h-[15%] lg:h-[12%]"
     >
       <Logo />
       <div
