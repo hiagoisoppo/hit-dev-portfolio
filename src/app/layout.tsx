@@ -1,19 +1,17 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
 import type { Metadata } from 'next'
 import './globals.css'
 
 import Main from '@/components/Main'
 import { LanguageProvider } from '@/contexts/LanguageContext'
-import { Genos } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: 'Hiago Isoppo Trajano',
   description: 'Personal website of Hiago Isoppo Trajano',
 }
 
-const genos = Genos({
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+const font = Roboto({
+  weight: ['100', '300', '400', '500', '700', '900'],
   subsets: ['latin'],
   preload: true,
   display: 'swap',
@@ -25,12 +23,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={genos.className}>
-      <body className="pattern no-scrollbar flex h-svh w-svw items-center justify-center bg-secondary-100 text-primary-700 dark:bg-primary-700 dark:text-secondary-100">
+    <html lang="en" className={font.className + ' dark'}>
+      <body className="no-scrollbar flex h-svh w-svw flex-col gap-3 bg-primary-100 p-2 text-secondary-300 dark:bg-secondary-300 dark:text-primary-100">
         <LanguageProvider>
-          <Header />
+          <header className="sticky top-0 z-50 h-[5%] w-full bg-blue-500">
+            HEADER
+          </header>
           <Main>{children}</Main>
-          <Footer />
         </LanguageProvider>
       </body>
     </html>

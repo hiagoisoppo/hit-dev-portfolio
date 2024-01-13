@@ -1,13 +1,10 @@
-'use client'
-import { motion } from 'framer-motion'
+import Section from '.'
 
-export default function Contact({ id }: { id: string }) {
+export default function Contact() {
   return (
-    <motion.section
-      id={id}
-      className="relative flex h-screen w-screen snap-center items-center justify-center"
-    >
-      <h1>contact</h1>
-    </motion.section>
+    <Section title="Contact">
+      <h1>Social Links</h1>
+      <h1>Form</h1>
+    </Section>
   )
 }

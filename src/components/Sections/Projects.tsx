@@ -1,13 +1,10 @@
-'use client'
+import Section from '.'
 
-export default function Projects({ id }: { id: string }) {
+export default function Projects() {
   return (
-    <section
-      id={id}
-      className="relative flex h-screen w-screen snap-center items-center justify-center"
-    >
-      <div className="negativepattern absolute top-0 z-0 flex h-[50%] w-full bg-primary-700 dark:bg-secondary-100"></div>
-      <h1>PROJECTS</h1>
-    </section>
+    <Section title="Hard Skills">
+      <h1>Complete</h1>
+      <h1>To Learn</h1>
+    </Section>
   )
 }
