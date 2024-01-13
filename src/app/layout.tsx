@@ -3,8 +3,8 @@ import Header from '@/components/Header'
 import type { Metadata } from 'next'
 import './globals.css'
 
-import LayoutBox from '@/components/LayoutBox'
 import Main from '@/components/Main'
+import { LanguageProvider } from '@/contexts/LanguageContext'
 import { Genos } from 'next/font/google'
 
 export const metadata: Metadata = {
@@ -26,11 +26,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={genos.className}>
-      <body className="no-scrollbar flex h-svh w-svw items-center justify-center bg-secondary-100 text-primary-700 dark:bg-primary-700 dark:text-secondary-100">
-        <LayoutBox />
-        <Header />
-        <Main>{children}</Main>
-        <Footer />
+      <body className="pattern no-scrollbar flex h-svh w-svw items-center justify-center bg-secondary-100 text-primary-700 dark:bg-primary-700 dark:text-secondary-100">
+        <LanguageProvider>
+          <Header />
+          <Main>{children}</Main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   )

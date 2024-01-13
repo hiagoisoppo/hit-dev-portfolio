@@ -4,10 +4,10 @@ import { motion } from 'framer-motion'
 export default function Name() {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -100 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.6, delay: 1 }}
-      className="group/logoglitch relative flex h-[10%] w-[100%] items-center justify-center text-5xl font-black italic md:w-[25%] md:text-5xl lg:h-[45%] lg:w-[12%] lg:text-4xl"
+      initial={{ opacity: 0, x: -200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -200 }}
+      className="group/logoglitch relative mb-[5%] flex h-[10%] w-[100%] items-center justify-center text-5xl font-black md:text-8xl lg:h-[20%] lg:text-9xl"
     >
       {/* BASE GLITCH */}
       <span className="absolute z-10 animate-[glitch3_5.7s_infinite] text-inherit group-hover/logoglitch:animate-[glitch0_700ms_infinite]">

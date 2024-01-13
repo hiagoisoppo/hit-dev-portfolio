@@ -1,5 +1,6 @@
 'use client'
 
+import { useLanguage } from '@/contexts/LanguageContext'
 import { motion } from 'framer-motion'
 import GlitchedTextBrIcon from '../Icons/FlagBr'
 import GlitchedTextEuaIcon from '../Icons/FlagUsa'
@@ -7,6 +8,8 @@ import GlitchedMoonIcon from '../Icons/Moon'
 import GlitchedSunIcon from '../Icons/Sun'
 
 export default function SwitchButton({ isTheme }: { isTheme: boolean }) {
+  const { toggleLanguage } = useLanguage()
+
   return (
     <motion.label
       initial={{ opacity: 0, y: -100 }}
@@ -36,11 +39,9 @@ export default function SwitchButton({ isTheme }: { isTheme: boolean }) {
             type="checkbox"
             id="check/language"
             className="peer/language sr-only"
-            // onChange={(event) => {
-            //   event.target.checked
-            //     ? document.documentElement.classList.add('dark')
-            //     : document.documentElement.classList.remove('dark')
-            // }}
+            onChange={() => {
+              toggleLanguage()
+            }}
           />
           <GlitchedTextEuaIcon />
           <GlitchedTextBrIcon />
