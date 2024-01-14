@@ -6,13 +6,13 @@ export default function Section({
   title: string
 }) {
   return (
-    <section className="relative flex h-[95%] w-full flex-col items-center justify-center gap-2 px-[0.5rem] pt-[3.5rem] md:flex-row">
-      <h1 className="clip-format-inside absolute top-0 w-full pl-6 pt-2 text-3xl uppercase">
+    <section className="relative flex h-[90vh] w-full flex-col items-center justify-center gap-2 px-[0.5rem] pt-[5rem] md:flex-row">
+      <h1 className="clip-format-inside absolute top-0 h-fit w-full p-4 text-center text-4xl font-bold uppercase">
         {title}
       </h1>
       <span
         aria-hidden
-        className="clip-format-outside absolute top-0 w-full bg-primary-100 p-2 text-3xl uppercase text-transparent opacity-45"
+        className="clip-format-outside absolute top-0 h-fit w-full bg-primary-100 p-4 text-center text-4xl font-bold uppercase text-transparent opacity-45"
       >
         {title}
       </span>
@@ -22,7 +22,7 @@ export default function Section({
       ></div>
       <div
         aria-hidden
-        className="absolute right-0 top-0 h-[.25rem] w-[3rem] bg-tertiary-100 opacity-50"
+        className="absolute right-0 top-0 h-[.5rem] w-[5rem] bg-tertiary-100 opacity-50"
       ></div>
       <div
         aria-hidden
